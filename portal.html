@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="float:right;margin:14px">
+<button class="btn btn-light"><a href="login.html">Log Out</a></button>
+</div>
+<div class="container-fluid">
+<nav class="navbar navbar-expand-sm justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Courses</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Centres</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Placements</b></a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#"><b>Testimonials</b></a>
+    </li>
+  </ul>
+</nav>
+<br>
+</div>
+
+<div class="container">
+  <center style="margin-right:45px"><b><u>Hello, DAC Student!</u></b></center>
+<hr/>
+<button data-toggle="collapse" data-target="#demo" class="btn btn-info">Click Here For Summary</button>
+
+<div id="demo" class="collapse" style="color:white">
+Centre for Development of Advanced Computing (C-DAC) is the premier R&D organization of the 
+Ministry of Electronics and Information Technology (MeitY) for carrying out R&D in IT, Electronics and associated areas. 
+Different areas of C-DAC, had originated at different times, many of which came out as a result of identification of opportunities.
+</div>
+<hr/>
+<div>
+    <h3 style="color:white">Course Contents</h3>
+</div>
+<hr/>
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="heading-1">
+      <h5 class="mb-0">
+        <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+          AWP
+        </a>
+      </h5>
+    </div>
+    <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+      <div class="card-body">
+
+        <div id="accordion-1">
+          <div class="card">
+            <div class="card-header" id="heading-1-1">
+              <h5 class="mb-0">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                  HTML
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-1-1" class="collapse" data-parent="#accordion-1" aria-labelledby="heading-1-1">
+              <div class="card-body">
+
+                  <div id="accordion-1-1">
+                    <div class="card">
+                      <div class="card-header" id="heading-1-1-1">
+                        <h5 class="mb-0">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1-1-1" aria-expanded="false" aria-controls="collapse-1-1-1">
+                            Forms
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapse-1-1-1" class="collapse" data-parent="#accordion-1-1" aria-labelledby="heading-1-1-1">
+                        <div class="card-body">
+                          Form Data
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-1-1-2">
+                        <h5 class="mb-0">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1-1-2" aria-expanded="false" aria-controls="collapse-1-1-2">
+                            Tables
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapse-1-1-2" class="collapse" data-parent="#accordion-1-1" aria-labelledby="heading-1-1-2">
+                        <div class="card-body">
+                          Table Data
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-1-1-3">
+                        <h5 class="mb-0">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1-1-3" aria-expanded="false" aria-controls="collapse-1-1-3">
+                            Frame
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapse-1-1-3" class="collapse" data-parent="#accordion-1-1" aria-labelledby="heading-1-1-3">
+                        <div class="card-body">
+                          Frame Data
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading-1-2">
+              <h5 class="mb-0">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                  Javascript
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-1-2" class="collapse" data-parent="#accordion-1" aria-labelledby="heading-1-2">
+              <div class="card-body">
+                FE Development
+              </div>
+            </div>
+          </div>
+        </div>      
+      
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading-2">
+      <h5 class="mb-0">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          JAVA
+        </a>
+      </h5>
+    </div>
+    <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+      <div class="card-body">
+        Core Java 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading-3">
+      <h5 class="mb-0">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Aptitide
+        </a>
+      </h5>
+    </div>
+    <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+      <div class="card-body">
+        General Aptitude
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

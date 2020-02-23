@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm justify-content-center" align="left">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="signup.html">Sign Up</a>
+    </li>
+  </ul>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Log In Page</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Enter your credentials here...
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >
+  Log In
+</button>
+</nav>
+<br/>
+<hr/>
+<fieldset>
+<legend align="center">My Portal</legend>
+<form action="portal.html" target="_blank" method="POST" onsubmit="return true">
+<table align="center" cellspacing="5" cellpadding="10" class="table-center">
+<tr>
+<td>Username:</td><td><input type="text" name="username" placeholder="example@gmail.com" autofocus autocomplete required/></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" name="passwd" pattern='[a-zA-Z]{8,15}' title="A to Z or a to z" required/></td>
+</tr>
+<tr>
+<td  align="right"><input type="submit" class="btn btn-primary" value="Log In"/></td><td  align="left"><input type="reset" class="btn btn-secondary"/></td>
+</tr>
+
+
+</table>
+</form>
+</fieldset>
+</body>
+</html>
